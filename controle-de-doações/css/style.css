@@ -1,0 +1,298 @@
+/**
+ * Folha de Estilos Customizados para o Sistema de Controle de Doações
+ * Atividade Extensionista II - UNINTER
+ * Paleta de cores: Azul, Branco, Cinza Claro
+ */
+
+:root {
+    --primary-color: #0d6efd;
+    --primary-hover: #0b5ed7;
+    --secondary-color: #0dcaf0;
+    --dark-blue: #0a2d54;
+    --light-bg: #f8f9fa;
+    --sidebar-bg: #112233;
+    --sidebar-text: #adb5bd;
+    --sidebar-hover-bg: #1a3047;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --border-radius: 12px;
+}
+
+body {
+    background-color: var(--light-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Estrutura do Layout Dashboard */
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+/* Barra Lateral (Sidebar) */
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background-color: var(--sidebar-bg);
+    color: #fff;
+    transition: all 0.3s;
+    min-height: 100vh;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+
+#sidebar .sidebar-header {
+    padding: 24px 20px;
+    background-color: #0b1a29;
+    border-bottom: 1px solid #1a3047;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li {
+    padding: 2px 15px;
+}
+
+#sidebar ul li a {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    color: var(--sidebar-text);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+#sidebar ul li a i {
+    margin-right: 12px;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+#sidebar ul li a:hover, 
+#sidebar ul li.active > a {
+    color: #fff;
+    background: var(--sidebar-hover-bg);
+}
+
+#sidebar ul li.active > a {
+    background: var(--primary-color);
+}
+
+/* Conteúdo Principal */
+#content {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar de Topo */
+.navbar-custom {
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.main-container {
+    padding: 30px;
+    flex: 1;
+}
+
+/* Cards Customizados */
+.custom-card {
+    background: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.custom-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card-stat {
+    border-left: 5px solid var(--primary-color);
+}
+
+.card-stat.stat-donors {
+    border-left-color: var(--primary-color);
+}
+
+.card-stat.stat-donations {
+    border-left-color: #198754;
+}
+
+.card-stat.stat-categories {
+    border-left-color: #ffc107;
+}
+
+.card-stat.stat-recent {
+    border-left-color: #dc3545;
+}
+
+/* Tabelas Modernas */
+.table-responsive-custom {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.custom-table {
+    margin-bottom: 0;
+}
+
+.custom-table th {
+    background-color: #f1f3f5;
+    color: var(--dark-blue);
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+    padding: 12px 16px;
+}
+
+.custom-table td {
+    padding: 14px 16px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+/* Botões Modernos */
+.btn-custom {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-custom-sm {
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+
+/* Formulários Organizados */
+.form-card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    padding: 30px;
+    border: 1px solid #eee;
+}
+
+.form-label {
+    font-weight: 550;
+    color: var(--dark-blue);
+    margin-bottom: 8px;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 11px 16px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* Rodapé */
+.footer-custom {
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    padding: 15px 30px;
+    color: #6c757d;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* Tela de Login */
+.login-body {
+    background: linear-gradient(135deg, #0a2d54 0%, #0d6efd 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 30px;
+    animation: fadeInUp 0.5s ease;
+}
+
+.login-logo {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    
+    #sidebar {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: auto;
+    }
+    
+    #sidebar .sidebar-header {
+        padding: 15px 20px;
+    }
+    
+    #sidebar ul.components {
+        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #sidebar ul li {
+        padding: 2px 5px;
+    }
+    
+    .navbar-custom {
+        padding: 15px 20px;
+    }
+    
+    .main-container {
+        padding: 15px;
+    }
+}
