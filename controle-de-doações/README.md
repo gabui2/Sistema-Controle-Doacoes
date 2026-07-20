@@ -1,4 +1,4 @@
-# Sistema Web de Controle de Doações 🎁💖
+# Sistema Web de Controle de Doações 
 
 **Atividade Extensionista II**  
 **Curso:** Análise e Desenvolvimento de Sistemas (ADS)  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📄 Descrição do Projeto
+##  Descrição do Projeto
 
 Este projeto consiste em um **Sistema Web de Controle de Doações** desenvolvido como parte prática da disciplina de **Atividade Extensionista II**. O objetivo central é auxiliar instituições beneficentes, ONGs, igrejas e associações comunitárias a organizarem, registrarem e consultarem doações recebidas de forma simples, ágil e segura.
 
@@ -14,7 +14,7 @@ O sistema permite o cadastro completo de doadores da comunidade, registro detalh
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 Este projeto foi construído respeitando as restrições acadêmicas clássicas, utilizando puramente linguagens de programação e marcação fundamentais, sem a inclusão de frameworks que pudessem mascarar o aprendizado da arquitetura básica:
 
@@ -25,7 +25,7 @@ Este projeto foi construído respeitando as restrições acadêmicas clássicas,
 
 ---
 
-## 📌 Requisitos do Sistema
+##  Requisitos do Sistema
 
 Para executar este sistema em seu computador local, você precisará de:
 
@@ -36,7 +36,7 @@ Para executar este sistema em seu computador local, você precisará de:
 
 ---
 
-## 🚀 Instalação e Configuração
+##  Instalação e Configuração
 
 Siga o passo a passo abaixo para rodar o projeto em seu ambiente local (exemplo usando o **XAMPP**):
 
@@ -70,7 +70,7 @@ http://localhost/Sistema-Controle-Doacoes/
 
 ---
 
-## 🔐 Usuário de Teste Padrão
+##  Usuário de Teste Padrão
 
 Utilize as credenciais abaixo para efetuar o login e acessar o painel de controle administrativo:
 
@@ -81,7 +81,7 @@ Utilize as credenciais abaixo para efetuar o login e acessar o painel de control
 
 ---
 
-## 📁 Estrutura de Pastas e Arquivos
+##  Estrutura de Pastas e Arquivos
 
 O projeto está organizado de forma modular para facilitar a manutenção e evitar códigos duplicados:
 
@@ -118,7 +118,7 @@ Sistema-Controle-Doacoes/
 
 ---
 
-## 📸 Demonstração das Telas (Layout & Interface)
+##  Demonstração das Telas (Layout & Interface)
 
 A interface do sistema foi cuidadosamente planejada seguindo uma identidade profissional, sóbria e altamente responsiva (Azul Corporativo, Branco e Cinza Claro):
 
@@ -130,7 +130,7 @@ A interface do sistema foi cuidadosamente planejada seguindo uma identidade prof
 
 ---
 
-## 🛡️ Segurança Aplicada
+##  Segurança Aplicada
 
 O sistema conta com proteções essenciais integradas de forma nativa:
 *   **Prepared Statements (PDO):** Todas as instruções SQL que lidam com variáveis externas utilizam placeholders `:nome_campo`, impedindo ataques de **SQL Injection**.
